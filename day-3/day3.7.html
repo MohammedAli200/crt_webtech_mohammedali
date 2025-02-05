@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 50px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        img{
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease-in-out;
+        }
+        .zoom:hover{
+            transform: scale(1.2);
+        }
+        .zoom-animation{
+            animation: zoomEffect 3s infinite alternate ease-in-out;
+        }
+        @keyframes zoomEffect {
+            0%{transform: scale(1);}
+            100%{transform: scale(1.2);}
+        }
+        .strech:hover{
+            transform: scaleX(1.5);
+        }
+        .tall:hover{
+            transform: scaleY(1.5);
+        }
+        .shrink:hover{
+            transform: scale(0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>1.hover to zoom</h2>
+            <img src="images/download.jpeg" alt="Zoom Image" class="zoom">
+        </div>
+        <div>
+            <h2>2.Continuous zoom in & out</h2>
+            <img src="images/download.jpeg" alt="zoom-animation" class="zoom-animation">
+        </div>
+        <div>
+            <h2>3.Hover to strech horizontally</h2>
+            <img src="images/download.jpeg" alt="strech Image" class="strech">
+        </div>
+        <div>
+            <h2>4.Hover to strech Horizontally</h2>
+            <img src="images/download.jpeg" alt="tall Image" class="tall">
+        </div>
+        <div>
+            <h2>5.Hover to shrink</h2>
+            <img src="images/download.jpeg" alt="shrink Image" class="shrink">
+        </div>
+    </div>
+</body>
+</html>

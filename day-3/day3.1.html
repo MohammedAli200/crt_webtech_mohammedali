@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            text-align: center;
+            background-color: khaki;
+            width: 70%;
+            margin-left: 150px;
+        }
+        legend{
+            color:peru;
+            font-size: x-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        input{
+            background-color: lavenderblush;
+            height: 20px;
+        }
+        label{
+            font-size: x-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: deeppink;
+            text-transform: capitalize;
+        }
+        button{
+            height: 30px;
+            width: 70px;
+            background-color: palegreen;
+        }button:hover{
+            background-color: forestgreen;
+            color: blanchedalmond;
+        }
+        label:nth-of-type(even){
+            color: azure;
+        }
+        input:nth-of-type(even){
+            background-color: dodgerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <label for="name">First Name:</label>
+        <input type="text" id="name"><br><br>
+        <label for="lname">last Name:</label>
+        <input type="text" id="lname"><br><br>
+        <label for="number">Register Number:</label>
+        <input type="number" id="number"><br><br>
+        <label for="mobile">Moible number:</label>
+        <input type="number" id="mobile"><br><br>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail"><br><br>
+        <button>Submit</button>
+    </fieldset>
+</body>
+</html>

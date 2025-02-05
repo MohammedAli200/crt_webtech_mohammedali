@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Image effects </title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 50px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        img{
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.5s ease-in-out;
+        }
+        .float:hover{
+            transform: translatey(-15px);
+        }
+        .flip:hover{
+            transform: rotateX(360deg);
+        }
+        .blur{
+            filter: blur(10px);
+        }
+        .blur:hover{
+            filter: blur(0);
+        }
+        .pulse{
+            animation: pulse 0.2s infinite alternate;
+        }
+        @keyframes pulse {
+            0%{transform:scale(1);opacity: 1;}
+            100%{transform: scale(1.1);opacity: 0.8;}
+        }
+        .shake:hover{
+            animation: shake 0.3s infinite;
+        }
+        @keyframes shake {
+            0%,100%{transform: translateX(0);}
+            25%{transform: translateX(-5px);}
+            50%{transform: translateX(5px);}
+            75%{transform: translateX(-5px);}
+        }
+        .spin:hover{
+            transform: rotate(360deg);
+        }
+        .tilt:hover{
+            transform: skewX(19deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Amazing image effects</h1>
+    <div class="containers">
+        <div>
+            <h2>1.Floating effects</h2>
+            <img src="images/download.jpeg" alt="Floating Image" class="float">
+        </div>
+        <div>
+            <h2>2.Flip effect</h2>
+            <img src="images/download.jpeg" alt="Flip Image" class="flip">
+        </div>
+        <div>
+            <h2>3. Blur to focus effect</h2>
+            <img src="images/download.jpeg" alt="Blur Image" class="blur">
+        </div>
+        <div>
+            <h2>4.Pulsing effect</h2>
+            <img src="images/download.jpeg" alt="Pulsing Image" class="pulse">
+        </div>
+        <div>
+            <h2>5.shake effect</h2>
+            <img src="images/download.jpeg" alt="shaking Image" class="shake">
+        </div>
+        <div>
+            <h2>6.spin effect</h2>
+            <img src="images/download.jpeg" alt="spin image" class="spin">
+        </div>
+        <div>
+            <h2>7.skew effect</h2>
+            <img src="images/download.jpeg" alt="Skew image" class="tilt">
+        </div>
+    </div>
+</body>
+</html>
