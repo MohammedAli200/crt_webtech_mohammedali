@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color:blue;
+            height:350px;
+            width:1060px;
+            margin-top: 130px;
+            margin-left:90px;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .key,.key2,.key3{
+            width: 80px;
+            height: 60px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            margin:1px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-left: 2px;
+        }
+        .row2,.row1,.row3,.row4,.row5,.arrow{
+            display: flex;
+            padding-bottom: 4px;
+        }
+        #del{
+            width:150px;
+        }
+        #tab{
+            width:120px;
+        }
+        #cap,#ret{
+            width:150px;
+        }
+        #shift1,#shift2,#com{
+            width:180px;
+        }
+        #space{
+            width:700px;
+        }
+        .arrow{
+            width: 200px;
+            height: 100px;
+            display: flex;
+            padding: 10px;
+        }
+        .keys{
+            height:20px;
+            width:60px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            border-radius: 2px;
+            text-align: center;
+        }
+        #key1{
+            margin-top: 30px;
+        }
+        #key2{
+            margin-top:30px;
+        }
+        #key3{
+            margin-top: 30px;
+        }
+        #key4{
+            margin-right: 500px;
+        }
+        #comm{
+            font-size:15px;
+        }
+        .hover:hover{
+            background-color: blue;
+            color: aliceblue;
+            border:2px solid blue;
+        }
+        #container:hover{
+            background-color: antiquewhite;
+        }
+    </style>
+   
+</head>
+<body>
+    <div id="container">
+        <div class="row1">
+            <div class="key hover">~</div>
+            <div class="key hover">1</div>
+            <div class="key hover">2</div>
+            <div class="key hover">3</div>
+            <div class="key hover">4</div>
+            <div class="key hover">5</div>
+            <div class="key hover">6</div>
+            <div class="key hover">7</div>
+            <div class="key hover">8</div>
+            <div class="key hover">9</div>
+            <div class="key hover">0</div>
+            <div class="key hover">-</div>
+            <div class="key hover">=</div>
+            <div class="key hover" id="del">delete</div>
+        </div>
+        <div class="row2">
+            <div class="key2 hover" id="tab">tab</div>
+            <div class="key2 hover">q</div>
+            <div class="key2 hover">w</div>
+            <div class="key2 hover">e</div>
+            <div class="key2 hover">r</div>
+            <div class="key2 hover">t</div>
+            <div class="key2 hover">y</div>
+            <div class="key2 hover">u</div>
+            <div class="key2 hover">i</div>
+            <div class="key2 hover">o</div>
+            <div class="key2 hover">p</div>
+            <div class="key2 hover">[</div>
+            <div class="key2 hover">]</div>
+            <div class="key2 hover">\</div>
+        </div>
+       <div class="row3">
+        <div class="key3 hover" id="cap">caps</div>
+        <div class="key3 hover">a</div>
+        <div class="key3 hover">s</div>
+        <div class="key3 hover">d</div>
+        <div class="key3 hover">f</div>
+        <div class="key3 hover">g</div>
+        <div class="key3 hover">h</div>
+        <div class="key3 hover">j</div>
+        <div class="key3 hover">k</div>
+        <div class="key3 hover ">l</div>
+        <div class="key3 hover">;</div>
+        <div class="key3 hover">'</div>
+        <div class="key3 hover" id="ret">return</div>
+       </div>
+       <div class="row4">
+        <div class="key hover" id="shift2">shift</div>
+        <div class="key hover">z</div>
+        <div class="key hover">x</div>
+        <div class="key hover">c</div>
+        <div class="key hover">v</div>
+        <div class="key hover">b</div>
+        <div class="key hover">n</div>
+        <div class="key hover">m</div>
+        <div class="key hover">,</div>
+        <div class="key hover">.</div>
+        <div class="key hover">/</div>
+        <div class="key hover" id="shift1">shift</div>
+       </div>
+       <div class="row5">
+        <div class="key hover">fn</div>
+        <div class="key hover">control</div>
+        <div class="key hover">option</div>
+        <div class="key hover" id="comm">command</div>
+        <div class="key hover" id="space">space</div>
+        <div class="key hover" id="com">command</div>
+        <div class="key hover" id="op">option</div>
+       </div>
+    </div>
+</body>
+</html>
